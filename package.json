@@ -1,0 +1,21 @@
+{
+  "name": "stopwords-iso",
+  "version": "0.1.0",
+  "author": "Gene Diaz <genediazjr@gmail.com> (http://genediazjr.com/)",
+  "description": "The most comprehensive collection of stopwords for multiple languages.",
+  "keywords": ["stopwords", "stop words"],
+  "license": "MIT",
+  "repository": "git://github.com/stopwords-iso/stopwords-iso",
+  "bugs": "https://github.com/stopwords-iso/stopwords-iso/issues",
+  "main": "stopwords-iso.json",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "jsonlint stopwords-iso.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jsonlint": "1.6.x"
+  }
+}
