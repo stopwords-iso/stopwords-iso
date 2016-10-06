@@ -1,0 +1,8 @@
+.idea
+.dropbox
+.DS_Store
+Icon?
+Thumbs.db
+
+*.log
+node_modules
