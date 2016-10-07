@@ -15,11 +15,12 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "build": "stopwords-collator -s raw -o stopwords-en",
-    "test": "npm run build && jsonlint stopwords-en.json -q"
+    "build": "npm update && stopwords-collator -i",
+    "test": "npm run build && jsonlint stopwords-iso.json -q"
   },
   "devDependencies": {
-    "stopwords-collator": "0.2.x",
+    "stopwords-collator": "*",
+    "stopwords-en": "*",
     "jsonlint": "1.6.x"
   }
 }
