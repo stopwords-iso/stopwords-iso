@@ -1,0 +1,19 @@
+{
+  "name": "stopwords-iso",
+  "description": "The most comprehensive collection of stopwords for multiple languages.",
+  "keywords": [
+    "stopwords",
+    "stop words"
+  ],
+  "homepage": "https://github.com/stopwords-iso/stopwords-iso",
+  "authors": [
+    "Gene Diaz <genediazjr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "stopwords-iso.json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
