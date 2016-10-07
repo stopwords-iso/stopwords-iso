@@ -12,6 +12,14 @@ The collection follows the ISO 639-1 language code.
 The collection comes in a JSON format and a text fortmat. You are free to use this collection any way you like.
 It is only currently published on [npm](https://www.npmjs.com/stopwords-iso) and [bower](https://bower.io).
 
+```sh
+$ npm install stopwords-iso
+```
+
+```sh
+$ bower install stopwords-iso
+```
+
 ```js
 // Node
 const stopwords = require('stopwords-iso'); // array of stopwords for multiple languages
