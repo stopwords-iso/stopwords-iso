@@ -9,7 +9,10 @@ The collection follows the ISO 639-1 language code.
 
 ### Usage
 
-The collection comes in a JSON format and a text fortmat. You are free to use this collection any way you like.
+The collection comes in a 
+[JSON format](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.json) and a 
+[text format](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.txt). 
+You are free to use this collection any way you like.
 It is only currently published on [npm](https://www.npmjs.com/stopwords-iso) and [bower](https://bower.io).
 
 ```sh
