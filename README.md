@@ -2,7 +2,7 @@ Stopwords ISO
 =======
 
 [![Build Status](https://travis-ci.org/stopwords-iso/stopwords-iso.svg?branch=master)](https://travis-ci.org/stopwords-iso/stopwords-iso)
-[![Dependency Status](https://david-dm.org/stopwords-iso/stopwords-iso.svg)](https://david-dm.org/stopwords-iso/stopwords-iso)
+[![devDependencies Status](https://david-dm.org/stopwords-iso/stopwords-iso/dev-status.svg)](https://david-dm.org/stopwords-iso/stopwords-iso?type=dev)
 
 The most comprehensive collection of stopwords for multiple languages.
 
