@@ -1,7 +1,7 @@
 Credits
 =======
 
-Below are the sources this collection.
+Below are the sources of this collection.
 - [Link Assistant](http://www.link-assistant.com/seo-stop-words.html)
 - [Lextek Onix](http://www.lextek.com/manuals/onix/stopwords1.html)
 - [Snowball Tartarus](http://snowball.tartarus.org/algorithms/english/stop.txt)
