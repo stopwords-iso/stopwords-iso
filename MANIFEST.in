@@ -1,1 +1,4 @@
-stopwords-iso.json
+include README.md
+include LICENSE
+include stopwords-iso.json
+inlcude stopwords_demo.ipynb
