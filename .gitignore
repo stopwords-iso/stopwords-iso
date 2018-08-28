@@ -9,11 +9,14 @@ node_modules
 
 # Compiled python modules.
 *.pyc
+/__pycache__/
 
 # Setuptools distribution folder.
 /dist/
+/build/
 
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
 
+# Jupyter notebooks
 /.ipynb_checkpoints

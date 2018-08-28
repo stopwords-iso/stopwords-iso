@@ -1,6 +1,9 @@
 Credits
 =======
 
+- Gene Diaz, stopwords compilation, npm and bower packages
+- Arthit Suriyawongkul, pip package
+
 Below are the sources of this collection.
 - [Link Assistant](http://www.link-assistant.com/seo-stop-words.html)
 - [Lextek Onix](http://www.lextek.com/manuals/onix/stopwords1.html)

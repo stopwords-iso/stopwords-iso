@@ -2,6 +2,8 @@ import json
 
 # All language code is ISO 639-1
 
+name = "stopwordsiso"
+
 stopwods_all = ""
 
 with open("stopwords-iso.json") as json_data:
