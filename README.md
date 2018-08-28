@@ -24,10 +24,24 @@ $ npm install stopwords-iso
 $ bower install stopwords-iso
 ```
 
+```sh
+$ pip install stopword-iso
+```
+
 ```js
 // Node
 const stopwords = require('stopwords-iso'); // object of stopwords for multiple languages
 const english = stopwords.en; // english stopwords
+```
+
+```python
+import stopwordsiso as stopwords
+
+stopwords.has_lang("th") # check if there is a stopwords list for the language
+stopwords.list_lang() # list all the supported languages
+stopwords.stopwords("en") # get a list of stopwords in a specific language
+stopwords.stopwords(["de", "zh", "id"]) # get a combined list of stopwords in multiple languages
+stopwords.stopwords("xxx") # an empty list will be returned, if the language is not supported
 ```
 
 ### Contributing
