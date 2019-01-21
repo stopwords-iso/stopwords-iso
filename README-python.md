@@ -13,7 +13,7 @@ The collection is in [JSON format](https://raw.githubusercontent.com/stopwords-i
 You are free to use this collection any way you like.
 
 ```sh
-$ pip install stopword-iso
+$ pip install stopwordsiso
 ```
 
 ```python

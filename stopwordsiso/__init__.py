@@ -1,26 +1,30 @@
 import json
+from typing import List, Union
 
-# All language code is ISO 639-1
+import pkg_resources
 
 name = "stopwordsiso"
 
-stopwods_all = ""
+STOPWORDS_FILE = pkg_resources.resource_filename(name, "stopwords-iso.json")
 
-with open("stopwords-iso.json") as json_data:
+# All language code is ISO 639-1
+stopwords_all = {}
+
+with open(STOPWORDS_FILE) as json_data:
     stopwords_all = json.load(json_data)
 
 langs = list(stopwords_all.keys())
 
 
-def list_lang():
+def list_lang() -> List[str]:
     return langs
 
 
-def has_lang(lang):
+def has_lang(lang: str) -> bool:
     return lang in langs
 
 
-def stopwords(langs):
+def stopwords(langs: Union[str, List[str]]) -> List[str]:
     words = list()
 
     if type(langs) == str:

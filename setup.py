@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="stopwordsiso",
-    version="0.3",
+    version="0.4",
     description="Collection of stopwords for multiple languages. Using ISO 639-1 language code.",
     url="http://github.com/thothmedia/stopwords-iso",
     author="Arthit Suriyawongkul",
@@ -25,5 +25,8 @@ setup(
     license="MIT",
     packages=["stopwordsiso"],
     include_package_data=True,
+    package_data={
+        "stopwordsiso": ["stopwords-iso.json"],
+    },
     zip_safe=False,
 )
