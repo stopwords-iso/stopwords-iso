@@ -25,7 +25,7 @@ $ bower install stopwords-iso
 ```
 
 ```sh
-$ pip install stopword-iso
+$ pip install stopwordsiso
 ```
 
 ```js
