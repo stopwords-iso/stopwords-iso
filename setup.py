@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="stopwordsiso",
-    version="0.4",
+    version="0.5",
     description="Collection of stopwords for multiple languages. Using ISO 639-1 language code.",
     url="http://github.com/thothmedia/stopwords-iso",
     author="Arthit Suriyawongkul",

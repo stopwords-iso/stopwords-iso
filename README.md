@@ -30,18 +30,19 @@ $ pip install stopwordsiso
 
 ```js
 // Node
-const stopwords = require('stopwords-iso'); // object of stopwords for multiple languages
-const english = stopwords.en; // english stopwords
+const stopwords = require('stopwords-iso');  // object of stopwords for multiple languages
+const english = stopwords.en;  // English stopwords
 ```
 
 ```python
+# Python
 import stopwordsiso as stopwords
 
-stopwords.has_lang("th") # check if there is a stopwords list for the language
-stopwords.list_lang() # list all the supported languages
-stopwords.stopwords("en") # get a list of stopwords in a specific language
-stopwords.stopwords(["de", "id", "zh"]) # get a combined list of stopwords in multiple languages
-stopwords.stopwords("xxx") # an empty list will be returned, if the language is not supported
+stopwords.has_lang("th")  # check if there is a stopwords for the language
+stopwords.langs()  # return a set of all the supported languages
+stopwords.stopwords("en")  # English stopwords
+stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
+stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
 ### Contributing
