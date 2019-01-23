@@ -7,14 +7,13 @@ This Python package is based on [Stopwords ISO](https://github.com/stopwords-iso
 
 Comparable packages also published on [npm](https://www.npmjs.com/stopwords-iso) and [bower](https://bower.io).
 
-### Usage
-
-The collection is in [JSON format](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.json).
-You are free to use this collection any way you like.
+## Installation
 
 ```sh
 $ pip install stopwordsiso
 ```
+
+## Usage
 
 ```python
 import stopwordsiso as stopwords
@@ -26,14 +25,24 @@ stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopw
 stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
-### Contributing
+## Stopwords Data
 
-If you wish to add, remove, or update some of the stopwords, please go to Stopwords ISO project at https://github.com/stopwords-iso. 
+The entire collection is in JSON format and can be found at [`stopwords-iso.json`](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.json) in your `stopwordsiso/` Python package directory. You are free to use this collection any way you like.
+
+Stopwords for each language is a list value with a key of respective language in ISO 639-1 language code, like this:
+
+```json
+{
+    "af": [ "aan", "af", "al", "as", ],
+    "ar": [ "آض", "آمينَ", "آه", "آهاً", ],
+}
+```
+
+If you wish to add, remove, or update some of the stopwords, please go to **Stopwords ISO** project at https://github.com/stopwords-iso. 
 
 
-### Credits
+## Credits
 
+- All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md)
 - Gene Diaz, stopwords compilation, npm and bower packages
-- Arthit Suriyawongkul, pip package
-
-All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md).
+- Arthit Suriyawongkul, Python utility and pip package

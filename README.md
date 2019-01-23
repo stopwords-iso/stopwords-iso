@@ -10,11 +10,13 @@ The collection follows the ISO 639-1 language code.
 
 If you only need stopwords for a specific language, there is a [separate collection for each](https://github.com/stopwords-iso).
 
-### Usage
+## Usage
 
 The collection is in [JSON format](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.json).
 You are free to use this collection any way you like.
 It is only currently published on [npm](https://www.npmjs.com/stopwords-iso), [bower](https://bower.io), and [pip](https://pypi.org/project/stopwordsiso/).
+
+### Node/JavaScript
 
 ```sh
 $ npm install stopwords-iso
@@ -24,14 +26,16 @@ $ npm install stopwords-iso
 $ bower install stopwords-iso
 ```
 
-```sh
-$ pip install stopwordsiso
-```
-
 ```js
 // Node
 const stopwords = require('stopwords-iso');  // object of stopwords for multiple languages
 const english = stopwords.en;  // English stopwords
+```
+
+### Python
+
+```sh
+$ pip install stopwordsiso
 ```
 
 ```python
@@ -45,12 +49,12 @@ stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopw
 stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
-### Contributing
+## Contributing
 
 If you wish to remove or update some of the stopwords, please file an issue first before sending a PR on the repo of the specific language.
 
 If you would like to add a stopword or a new set of stopwords, please add them as a new text file on the repo of the corresponding language.
 
-### Credits
+## Credits
 
 All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md).

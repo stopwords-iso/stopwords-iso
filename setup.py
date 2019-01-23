@@ -10,7 +10,7 @@ setup(
     name="stopwordsiso",
     version="0.5",
     description="Collection of stopwords for multiple languages. Using ISO 639-1 language code.",
-    url="http://github.com/thothmedia/stopwords-iso",
+    url="https://github.com/thothmedia/stopwords-iso",
     author="Arthit Suriyawongkul",
     author_email="arthit@gmail.com",
     classifiers=[
