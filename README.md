@@ -11,6 +11,7 @@ If you only need stopwords for a specific language, there is a [separate collect
 
 The collection is in [JSON format](https://raw.githubusercontent.com/stopwords-iso/stopwords-iso/master/stopwords-iso.json).
 You are free to use this collection any way you like.
+
 It is only currently published on [npm](https://www.npmjs.com/stopwords-iso), [bower](https://bower.io), and [pip](https://pypi.org/project/stopwordsiso/).
 
 ### Node/JavaScript
@@ -126,7 +127,7 @@ the official "language codes list" and is linked to from [www.iso.org](https://w
 | gl | Galician | ✓ |
 | gv | Manx |  |
 | gn | Guarani |  |
-| gu | Gujarati |  |
+| gu | Gujarati | ✓ |
 | ht | Haitian; Haitian Creole |  |
 | ha | Hausa | ✓ |
 | he | Hebrew | ✓ |
