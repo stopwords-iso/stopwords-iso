@@ -1,8 +1,5 @@
-stopwords-iso
+Stopwords ISO
 =======
-
-[![Build Status](https://travis-ci.org/stopwords-iso/stopwords-iso.svg?branch=master)](https://travis-ci.org/stopwords-iso/stopwords-iso)
-[![devDependencies Status](https://david-dm.org/stopwords-iso/stopwords-iso/dev-status.svg)](https://david-dm.org/stopwords-iso/stopwords-iso?type=dev)
 
 The most comprehensive collection of stopwords for multiple languages.
 
@@ -30,6 +27,23 @@ $ bower install stopwords-iso
 // Node
 const stopwords = require('stopwords-iso');  // object of stopwords for multiple languages
 const english = stopwords.en;  // English stopwords
+```
+
+### Python
+
+```sh
+$ pip install stopwordsiso
+```
+
+```python
+# Python
+import stopwordsiso as stopwords
+
+stopwords.has_lang("th")  # check if there is a stopwords for the language
+stopwords.langs()  # return a set of all the supported languages
+stopwords.stopwords("en")  # English stopwords
+stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
+stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
 ## Contributing
