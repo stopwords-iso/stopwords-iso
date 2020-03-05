@@ -33,3 +33,4 @@ Below are the sources of this collection.
 - [Baidu Stopwords](http://www.baiduguide.com/baidu-stopwords)
 - [Шумові слова by Wikipedia](https://uk.wikipedia.org/wiki/%D0%A8%D1%83%D0%BC%D0%BE%D0%B2%D1%96_%D1%81%D0%BB%D0%BE%D0%B2%D0%B0)
 - [meta-ukraine](http://meta-ukraine.com/ua/pages/stopwrd.asp)
+- [Greek stop-words by spiros](https://www.translatum.gr/forum/index.php?topic=3550.0)
