@@ -1,0 +1,6 @@
+include CREDITS.md
+include LICENSE
+include README.md
+include README-python.md
+include stopwords_demo.ipynb
+include stopwordsiso/stopwords-iso.json
