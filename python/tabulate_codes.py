@@ -2,15 +2,17 @@
 """Generates a table of ISO 639-1:2002 and writes to README.md."""
 
 import json
-import time
 import os.path
-from html.parser import HTMLParser
+import time
 import urllib.request
+from html.parser import HTMLParser
 
 
 class ISO6391TableParser(HTMLParser):
     def __init__(self, *args, **kwargs):
-        self._in_tr = self._in_td = self._code_flag = self._country_flag = False
+        self._in_tr = (
+            self._in_td
+        ) = self._code_flag = self._country_flag = False
         self._reset_tdc()
         self._codes = []
         self._names = []
@@ -76,7 +78,9 @@ def tabulate():
     check = "\u2713"
     template = "| {code} | {lang} | {incl} |"
     for k, v in parser.code_to_name.items():
-        lines.append(template.format(code=k, lang=v, incl=check if k in sw else ""))
+        lines.append(
+            template.format(code=k, lang=v, incl=check if k in sw else "")
+        )
     with open(os.path.join(here, "README.md")) as f:
         readme = f.read()
     readme += """\
@@ -93,8 +97,7 @@ the official "language codes list" and is linked to from [www.iso.org](https://w
 
 {table}
 """.format(
-        now=time.ctime(),
-        table="\n".join(lines)
+        now=time.ctime(), table="\n".join(lines)
     )
     with open(os.path.join(here, "README.md"), "w") as f:
         return f.write(readme)
