@@ -16,13 +16,18 @@ $ pip install stopwordsiso
 ## Usage
 
 ```python
-import stopwordsiso as stopwords
+import stopwordsiso
 
-stopwords.has_lang("th")  # check if there is a stopwords for the language
-stopwords.langs()  # return a set of all the supported languages
-stopwords.stopwords("en")  # English stopwords
-stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
-stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
+stopwordsiso.has_lang("th")  # check if there is a stopwords for Thai language
+stopwordsiso.langs()  # return a set of all the supported languages
+```
+
+```python
+from stopwordsiso import stopwords
+
+stopwords("en")  # English stopwords
+stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
+stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
 ## Stopwords Data

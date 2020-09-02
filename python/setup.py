@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="stopwordsiso",
-    version="0.6",
+    version="0.6.1",
     description="Collection of stopwords for multiple languages. Using ISO 639-1 language code.",
     url="https://github.com/bact/stopwords-iso",
     author="Arthit Suriyawongkul",
