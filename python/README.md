@@ -43,6 +43,7 @@ If you wish to add, remove, or update some of the stopwords, please go to **Stop
 
 ## Credits
 
-- All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md)
 - Gene Diaz, stopwords compilation, npm and bower packages
-- Arthit Suriyawongkul, Python utility and pip package
+- Arthit Suriyawongkul, Python utility and pip package (was originally at https://github.com/wisesight/stopwords-iso )
+- All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md)
+- Get the latest list of stopwords at https://github.com/stopwords-iso/stopwords-iso
