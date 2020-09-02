@@ -13,4 +13,4 @@ __all__ = [
     "stopwords",
 ]
 
-from .core import has_lang, langs, stopwords
+from ._core import has_lang, langs, stopwords
