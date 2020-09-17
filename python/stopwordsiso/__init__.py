@@ -1,43 +1,37 @@
-import json
-from typing import Iterable, Set, Union
+"""
+Collection of stopwords for multiple languages.
 
-import pkg_resources
+https://github.com/bact/stopwords-iso
 
-name = "stopwordsiso"
+The MIT License (MIT)
 
-STOPWORDS_FILE = pkg_resources.resource_filename(name, "stopwords-iso.json")
+Copyright (c) 2019 Arthit Suriyawongkul and Gene Diaz
 
-# All language code is ISO 639-1
-_stopwords_all = {}
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-with open(STOPWORDS_FILE) as json_data:
-    _stopwords_all = json.load(json_data)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-_langs = set(_stopwords_all.keys())
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
 
+__version__ = "0.6.1"
 
-def langs() -> Set[str]:
-    return _langs
+__all__ = [
+    "has_lang",
+    "langs",
+    "stopwords",
+]
 
-
-def has_lang(lang: str) -> bool:
-    return lang in _langs
-
-
-def stopwords(langs: Union[str, Iterable[str]]) -> Set[str]:
-    words = set()
-
-    if langs:
-        if type(langs) == str:
-            if has_lang(langs):
-                words.update(_stopwords_all[langs])
-        else:
-            try:
-                iter(langs)  # test if langs is iterable
-                for lang in langs:
-                    if has_lang(lang):
-                        words.update(_stopwords_all[lang])
-            except TypeError:
-                print("'langs' argument is not string nor iterable.'")
-
-    return words
+from ._core import has_lang, langs, stopwords

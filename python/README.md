@@ -16,13 +16,18 @@ $ pip install stopwordsiso
 ## Usage
 
 ```python
-import stopwordsiso as stopwords
+import stopwordsiso
 
-stopwords.has_lang("th")  # check if there is a stopwords for the language
-stopwords.langs()  # return a set of all the supported languages
-stopwords.stopwords("en")  # English stopwords
-stopwords.stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
-stopwords.stopwords("xxx")  # an empty set will be returned for unknown language
+stopwordsiso.has_lang("th")  # check if there is a stopwords for Thai language
+stopwordsiso.langs()  # return a set of all the supported languages
+```
+
+```python
+from stopwordsiso import stopwords
+
+stopwords("en")  # English stopwords
+stopwords(["de", "id", "zh"])  # German, Indonesian, and Chinese stopwords
+stopwords("xxx")  # an empty set will be returned for unknown language
 ```
 
 ## Stopwords Data
@@ -43,6 +48,7 @@ If you wish to add, remove, or update some of the stopwords, please go to **Stop
 
 ## Credits
 
-- All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md)
 - Gene Diaz, stopwords compilation, npm and bower packages
-- Arthit Suriyawongkul, Python utility and pip package
+- Arthit Suriyawongkul, Python utility and pip package (was originally at https://github.com/wisesight/stopwords-iso )
+- All stopwords sources are [listed here](https://github.com/stopwords-iso/stopwords-iso/blob/master/CREDITS.md)
+- Get the latest list of stopwords at https://github.com/stopwords-iso/stopwords-iso

@@ -2,15 +2,15 @@ from setuptools import setup
 
 
 def readme():
-    with open("README-python.md") as f:
+    with open("README.md", encoding="utf-8") as f:
         return f.read()
 
 
 setup(
     name="stopwordsiso",
-    version="0.5.1",
+    version="0.6.1",
     description="Collection of stopwords for multiple languages. Using ISO 639-1 language code.",
-    url="https://github.com/thothmedia/stopwords-iso",
+    url="https://github.com/bact/stopwords-iso",
     author="Arthit Suriyawongkul",
     author_email="arthit@gmail.com",
     classifiers=[
